@@ -152,17 +152,25 @@
 }
 
 /* Digits part */
-.section-title{
-  width: 60%;
+
+.digits{
   margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1px solid red;
+display:center;
+}
+.section-title{
+  text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+  width: 60%;
   margin-bottom: 20px;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold; /*начертание шрифта полужирное*/
 
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  border: 1px solid red;
 }
 
 .section-subtitle{
@@ -171,29 +179,25 @@
   font-size: 24px;
   font-weight: normal;
 
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  border: 1px solid red;
 }
 
 .table{
   width:1100px;
   margin:60px auto 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  border: 1px solid red;
 
 }
 
 .table__cell{
   width: 250px;
-  display: flex;
-  flex-direction: row;
-  
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  border: 1px solid red;
 }
 
 .table__heading{
@@ -202,17 +206,59 @@
   font-weight: bold;
   margin-bottom:20px;
 
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  border: 1px solid red;
 }
 
 .table__text{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 20px;
 
-  border: solid;
-  border-color:red;
-  border-width:1px;
+  border: 1px solid red;
+}
+/* feynman part */
+.feinman{
+  height: 790px;
+  position: relative;
+  background-color: #f2f2f2;
+  border: 1px solid red;
+}
+
+.feynman-picture{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 637px ;
+  width: 867px;
+  border: 1px solid red;
+}
+
+.feynman__title{
+  width: 648px;
+  margin-bottom: 70px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold; /*начертание шрифта полужирное*/
+
+  border: 1px solid red;
+}
+
+.feynman__subtitle{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+
+  border: 1px solid red;
+}
+
+.feynman__link{
+  position: absolute;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  right: 48px;
+  top: 395px;
+
+  border: 1px solid red;
 }
