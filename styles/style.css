@@ -18,7 +18,7 @@
   position: relative;
   background-color: #f2f2f2;
   display: flex;
-
+  overflow: hidden;/*скрыть не поместившуюся часть целиком без скролла.*/
   /*border: 1px solid red;*/
 }
 .logo_place_header{
@@ -83,9 +83,18 @@
   position: absolute;
   top: 64px;
   right: 0px;
-  background-color: #2f80ed;
+  background-color: #2f80ed; 
+  
+  transition: 20s linear ;
+  transform: rotate(360deg);
+ 
+  animation-iteration-count:infinite;
+  
 
   /*border: 1px solid red;*/
+}
+.header__square-pic:hover{
+ 
 }
 
 /* Description part */
@@ -106,7 +115,7 @@
   font-size: 18px; /*размер шрифта 18px*/
   font-weight: normal; /*начертание шрифта нормальное*/
 
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .two-columns__brief {
@@ -141,6 +150,88 @@
  /*border: 1px solid red;*/
 }
 
+
+/* techniques part */
+.techniques{
+  width: 80%;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
+.cards__item{
+ 
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+
+}
+
+.cards__image{
+  height: 160px;
+  width: 160px;
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  border-radius: 100px; /* Радиус скругления */
+  border: 1px solid red;
+}
+
+.cards__title{
+  margin-top: 43px;
+  margin-bottom: 16px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.cards__description{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+/* video part */
+.video{
+  margin-top:100px;
+  border: 1px solid red;
+
+}
+
+
+.video__iframe{
+  margin-top: 50px;
+  margin-left: 135px;
+  margin-right: auto;
+  width: 515px;
+  height: 316px;
+  border: 1px solid red;
+}
+
+/* oakley part */
+.oakley{
+  padding-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0;
+  background-color: #f2f2f2;
+ /*border: 3px solid #f2f2f2; */
+
+}
 /* Digits part */
 
 .digits {
@@ -160,7 +251,7 @@
   font-size: 60px;
   font-weight: bold; /*начертание шрифта полужирное*/
 
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .section-subtitle {
@@ -173,7 +264,7 @@
   font-size: 24px;
   font-weight: normal;
 
- /*border: 1px solid red;*/
+ border: 1px solid red;
 }
 
 .table {
@@ -184,9 +275,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-   flex-wrap: wrap;
+  flex-wrap: wrap;
 
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 .table__cell {
@@ -275,6 +366,75 @@
   z-index: 10;
  /*border: 1px solid red;*/
 }
+/* khan part */
+.khan{
+  width: 80%;
+  border: 1px solid red;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.khan__author{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold; /*начертание шрифта полужирное*/
+}
+
+.khan__quote{
+  margin-top: 50px;
+  margin-bottom: 36px;
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__quote-author{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid red;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.khan__quote-author-subline{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+  border: 1px solid red;
+}
+.khan__book-container{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+.khan__book-pic{
+  width: 608px;
+  height: 620px;
+}
+.khan__buy-link{
+  margin-left: 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color:#2f80ed ;
+  text-decoration: none;
+  border: 1px solid red;
+}
 /* kaufman part */
 .kaufman{
   position: relative;
@@ -356,6 +516,24 @@
    /*border: 1px solid red;*/
 }
 
+/* resources part */
+.resources{
+  margin-top: 100px;  
+}
+
+.resources__logo-zone{
+  width: 1100px;
+  margin-bottom: 217px;
+  border: 1px solid red;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.resources__logo{
+  height: 38px;
+  width: 270px;
+
+}
 /* footer part */
 .footer{
   min-height: 350px;  
