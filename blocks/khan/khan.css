@@ -1,7 +1,9 @@
 .khan { 
   /*border: 1px solid red;*/
   background-color: #f2f2f2;
-  margin-top: 105px;
+  
+  padding-top: 105px;
+  /*border: 1px solid red;*/
 }
 
 .khan__container{
