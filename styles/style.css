@@ -1,3 +1,12 @@
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  } 
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -52,6 +61,10 @@
   color:#2f80ed ;
   text-decoration: none;
 }
+.header__link:hover{
+  opacity: 0.6;
+  transition: linear;
+}
 
 .header__subtitle {
   position: absolute;
@@ -84,18 +97,11 @@
   top: 64px;
   right: 0px;
   background-color: #2f80ed; 
-  
-  transition: 20s linear ;
-  transform: rotate(360deg);
- 
-  animation-iteration-count:infinite;
-  
+  animation: rotation 20s linear infinite; 
 
   /*border: 1px solid red;*/
 }
-.header__square-pic:hover{
- 
-}
+
 
 /* Description part */
 .description {
@@ -160,20 +166,21 @@
   padding-top: 100px;
 }
 .cards{
-  display: flex;
-  flex-direction: row;
-  
+  display: grid;
   width: 920px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid red;
+  grid-template-columns: repeat(auto-fill,240px);  
+  column-gap: 100px;
+  row-gap: 100px;
 }
 
 .cards__item{
- 
-  margin-right: 100px;
+  width: 240px;
   display: flex;
   flex-direction: column;
+  
   border: 1px solid red;
 
 }
@@ -208,16 +215,22 @@
 .video{
   margin-top:100px;
   border: 1px solid red;
-
+  position: relative;
+  
 }
-
+.video__iframes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .video__iframe{
   margin-top: 50px;
-  margin-left: 135px;
-  margin-right: auto;
+  margin-right: 20px;
   width: 515px;
   height: 316px;
+  margin-bottom: -50px;
   border: 1px solid red;
 }
 
@@ -366,6 +379,11 @@
   z-index: 10;
  /*border: 1px solid red;*/
 }
+.feynman__link:hover{
+  opacity: 0.6;
+  transition: linear;
+}
+
 /* khan part */
 .khan{
   width: 80%;
@@ -435,6 +453,11 @@
   text-decoration: none;
   border: 1px solid red;
 }
+.khan__buy-link:hover{
+  opacity: 0.6;
+  transition: linear;
+}
+
 /* kaufman part */
 .kaufman{
   position: relative;
@@ -504,7 +527,7 @@
 }
 
 .kaufman__trianle{
-  background-image: url(../images/kaufman-triangle.svg);
+ /* background-image: url(../images/kaufman-triangle.svg);*/
   background-size: contain;
   height: 877px;
   width: 877px;
@@ -512,7 +535,7 @@
   top:0px;
   right:-210px;
   z-index: 1;
-  
+  animation: rotation 20s linear infinite;
    /*border: 1px solid red;*/
 }
 
@@ -611,9 +634,14 @@
 
 .footer__column-link{
   display: flex;
-  flex-direction: row;
   justify-content: left;
+  align-items: center;
 }
+.footer__column-link:hover{
+  opacity: 0.6;
+  transition: linear;
+}
+
 .footer__social-icon{ 
   width: 16px;
   height: 16px; 
