@@ -9,8 +9,17 @@
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
 .resources__logo {
   height: 38px;
   width: 270px;
+}
+
+.resources__logo:hover{
+  opacity: 0.6;
+  transition: linear;
 }

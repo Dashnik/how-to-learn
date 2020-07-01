@@ -1,3 +1,4 @@
+
 .feynman {
   min-height: 790px;
   position: relative;
@@ -19,7 +20,6 @@
 
   /*border: 1px solid red;*/
 }
-
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
@@ -38,7 +38,7 @@
   bottom: 0px;
   height: 637px;
   width: 867px;
-
+  background-image: url(../../images/feynman.png);
   /*border: 1px solid red;*/
 }
 
