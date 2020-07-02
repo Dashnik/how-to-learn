@@ -1,3 +1,13 @@
+@import url(./__title/khan__title.css);
+@import url(./__quote/khan__quote.css);
+@import url(./__quote-author/khan__quote-author.css);
+@import url(./__quote-author-subline/khan__quote-author-subline.css);
+@import url(./__container/khan__container.css);
+@import url(./__buy-link/khan__buy-link.css);
+@import url(./__book-pic/khan__book-pic.css);
+@import url(./__book-container/khan__book-container.css);
+@import url(./__author/khan__author.css);
+
 .khan { 
   /*border: 1px solid red;*/
   background-color: #f2f2f2;
@@ -6,29 +16,29 @@
   /*border: 1px solid red;*/
 }
 
-.khan__container{
+/*.khan__container{
   width: 80%;
   margin-left: auto;
   margin-right: auto; 
-}
+}*/
 
-.khan__author {
+/*.khan__author {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-}
+}*/
 
-.khan__title {
+/*.khan__title {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: bold; /*начертание шрифта полужирное*/
-}
+  font-weight: bold; /*начертание шрифта полужирное
+}*/
 
-.khan__quote {
+/*.khan__quote {
   margin-left: 0;
   margin-top: 50px;
   margin-bottom: 36px;
@@ -36,49 +46,53 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-   /*border: 1px solid red;*/
-}
+   /*border: 1px solid red;
+}*/
 
-.khan__quote-author {
+/*.khan__quote-author {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-    /*border: 1px solid red;*/
+    /*border: 1px solid red;
   margin-bottom: 0;
   margin-top: 0;  
-}
+}*/
 
-.khan__quote-author-subline {
+/*.khan__quote-author-subline {
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 68px;
-    /*border: 1px solid red;*/
-}
-.khan__book-container {
+    /*border: 1px solid red;
+}*/
+
+/*.khan__book-container {
   display: flex;
   flex-direction: row;
-  /*border: 1px solid red;*/
-}
-.khan__book-pic {
+    /*border: 1px solid red;
+}*/
+
+/*.khan__book-pic {
   width: 620px;
   height:608px ;  
   object-position: top;
-  object-fit: cover;
- 
-  
-}
-.khan__buy-link {
+  object-fit: cover;  
+}*/
+
+/*.khan__buy-link {
   margin-left: 48px;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
-   /*border: 1px solid red;*/
+  display: flex;
+  align-self: start;
+  
+  /* border: 1px solid red;
 }
 .khan__buy-link:hover {
   opacity: 0.6;
   transition: linear;
-}
+}*/

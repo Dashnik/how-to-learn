@@ -4,11 +4,11 @@
 @import url(./__description/cards__description.css);
 
 .cards {
-    display: grid;
-    width: 920px;
-    margin-left: auto;
-    margin-right: auto;
-    /*border: 1px solid red;*/
-    grid-template-columns: repeat(auto-fill, 240px);
-    column-gap: 100px; 
-  }       
+  display: grid;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid red;*/
+  grid-template-columns: repeat(auto-fill, 240px);
+  column-gap: 100px;
+}

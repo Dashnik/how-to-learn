@@ -1,10 +1,11 @@
+
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
-
   /* border: 3px solid #f2f2f2;*/
 }
-.section-title {
+
+/*.section-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -15,10 +16,11 @@
   font-size: 60px;
   font-weight: bold; /*начертание шрифта полужирное*/
 
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.section-subtitle {
+
+/*.section-subtitle {
   width: 60%;
   text-align: center;
   margin-bottom: 0;
@@ -28,6 +30,6 @@
   font-size: 24px;
   font-weight: normal;
 
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 

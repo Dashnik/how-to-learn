@@ -1,3 +1,10 @@
+@import url(./__columns/footer__columns.css);
+@import url(./__column/_content_copyright/footer__column_content_copyright.css);
+@import url(./__author/footer__author.css);
+@import url(./__column-heading/footer__column-heading.css);
+@import url(./__column-links/footer__column-links.css);
+@import url(./__social-icon/footer__social-icon.css);
+
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -8,50 +15,50 @@
   /* border: 3px solid #f2f2f2;
     border: 1px solid red;*/
 }
-.footer__columns {
+/*.footer__columns {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* height: 100px;/*откуда брать эту инфу???*/
+  /* height: 100px;/*откуда брать эту инфу???
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   color: #f2f2f2;
   min-height: 250px;
 
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.footer__column_content_copyright {
+/*.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.footer__author {
+/*.footer__author {
   /* position: absolute;
     left: 0px;
-    bottom: 18px;*/
+    bottom: 18px;
 
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.footer__column-heading {
+/*.footer__column-heading {
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.footer__column-links {
+/*.footer__column-links {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -61,13 +68,15 @@
   font-size: 18px;
   font-weight: normal;
   list-style-type: none;
-  /*   border: 1px solid red; */
-}
+  /*   border: 1px solid red; 
+}*/
 
-.footer__column-link {
+/*.footer__column-link {
   display: flex;
   justify-content: left;
   align-items: center;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 .footer__column-link:hover {
   opacity: 0.6;
@@ -79,8 +88,4 @@
   height: 16px;
   margin-right: 10px;
   color: #f2f2f2;
-}
-.footer__column-link {
-  text-decoration: none;
-  color: #f2f2f2;
-}
+}*/

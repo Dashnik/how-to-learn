@@ -1,3 +1,9 @@
+@import url(../header/__title/header__title.css);
+@import url(../header/__subtitle/header__subtitle.css);
+@import url(../header/__main-illustration/header__main-illustration.css);
+@import url(../header/__square-pic/header__square-pic.css);
+@import url(../header/__link/header__link.css);
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -10,7 +16,7 @@
   /*border: 1px solid red;*/
 }
 
-.header__title {
+/*.header__title {
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -20,19 +26,19 @@
   flex-direction: column;
   justify-content: center;
 
-  /*border: 1px solid red;*/
-}
+  /*border: 1px solid red;
+}*/
 
-.header__link {
+/*.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 .header__link:hover {
   opacity: 0.6;
   transition: linear;
-}
+}*/
 
-.header__subtitle {
+/*.header__subtitle {
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -42,9 +48,9 @@
   font-weight: normal;
   z-index: 2;
 
-  /*border: 1px solid red;*/
-}
-.header__main-illustration {
+  /*border: 1px solid red;
+}*/
+/*.header__main-illustration {
   width: 765px;
   height: 608px;
   background-image: url("../../images/header-image.png");
@@ -53,16 +59,17 @@
   bottom: 0px;
   right: 0px;
   z-index: 1;
-  /*border: 1px solid red;*/
-}
-.header__square-pic {
+  /*border: 1px solid red;
+}*/
+
+/*.header__square-pic {
   width: 568px;
   height: 568px;
   position: absolute;
   top: 64px;
   right: 0px;
   background-color: #2f80ed;
-  animation: rotation 20s linear infinite;
+  /*animation: rotation 20s linear infinite;
 
-  /*border: 1px solid red;*/
-}
+  border: 1px solid red;
+}*/
